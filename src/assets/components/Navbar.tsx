@@ -1,6 +1,6 @@
 function Navbar() {
   return (
-    <div className="flex flex-col bg-teal-500 w-screen">
+    <div className="flex flex-col bg-teal-500 w-screen fixed z-50">
       <div className="flex flex-row ">
         {/* nav(top bar)- logo and name */}
         <div className="flex gap-5  border-r-2 border-gray-400 border-b-2 pt-4 pb-2  w-70">

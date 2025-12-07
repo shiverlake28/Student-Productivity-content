@@ -6,9 +6,9 @@ import SignUp from "./assets/AuthFront-tsx/SignUp";
 function App() {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar />
       <Login />
-      <SignUp />
+      <SignUp /> */}
       <Profile />
     </div>
   );

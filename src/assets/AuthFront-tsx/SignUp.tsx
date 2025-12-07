@@ -50,11 +50,6 @@ function SignUp() {
           </p>
         </form>
         <div className="flex flex-row justify-center gap-5">
-          {/* ✅ GOOGLE BUTTON */}
-          <button className="w-12 h-12 rounded-full bg-white flex items-center justify-center cursor-pointer border ">
-            <FaGoogle className="text-orange-500 text-md" />
-          </button>
-
           {/* ✅ FACEBOOK BUTTON */}
           <button className="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center cursor-pointer border">
             <FaFacebook className="text-white-600 text-lg " />

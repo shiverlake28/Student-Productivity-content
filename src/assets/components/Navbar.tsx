@@ -1,11 +1,11 @@
 function Navbar() {
   return (
-    <div className="flex flex-col bg-teal-500 w-screen fixed z-50">
+    <div className="flex flex-col bg-teal-500 w-screen fixed z-1">
       <div className="flex flex-row ">
         {/* nav(top bar)- logo and name */}
         <div className="flex gap-5  border-r-2 border-gray-400 border-b-2 pt-4 pb-2  w-70">
-          <img className="ml-5 h-15 " src="public/vite.svg" alt="Img.logo" />
-          <h1 className="text-2xl font-bold font-serif mt-4">Study buddy</h1>
+          <img className="ml-5 h-17" src="public/vite.svg" alt="Img.logo" />
+          <h1 className="text-2xl font-bold font-serif mt-4">Study Buddy</h1>
         </div>
         {/* nav(top bar)- toogle */}
         <div className="flex pl-10 pt-7  border-gray-400 border-b-2 ">

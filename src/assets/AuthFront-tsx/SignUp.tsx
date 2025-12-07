@@ -2,7 +2,7 @@ import { FaApple, FaGoogle, FaFacebook } from "react-icons/fa";
 // bg-linear-to-b from-blue-200 via-blue-300 to-blue-400
 function SignUp() {
   return (
-    <div className="flex flex-col justify-center items-center h-screen w-screen  bg-[url('public/pexels-padrinan-19670.jpg')] bg-cover bg-center font-mono">
+    <div className="flex flex-col justify-center items-center h-screen w-screen  bg-[url('public/pexels-padrinan-19670.jpg')] bg-cover bg-center font-mono overflow-y-hidden">
       <div className=" flex flex-col gap-5 items-center justify-start h-[530px] w-[380px] border-2 border-gray-300 rounded-4xl bg-linear-to-r from-[rgb(232,240,244)]  to-[rgba(233,232,222,0.9)]">
         <button className="flex items-center gap-5 mt-4 bg-[rgb(210,238,235)] cursor-pointer border border-gray-200 rounded-2xl">
           <div className="w-12 h-12 rounded-full bg-transparent  flex items-center justify-center cursor-pointer">

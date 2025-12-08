@@ -18,9 +18,9 @@ function Profile() {
   const [skill5] = useState("web");
 
   return (
-    <div className="flex">
-      <div className="flex flex-col bg-[rgba(238,237,233,0.63)] overflow-x-hidden overflow-y-auto">
-        <div className=" flex flex-col justify-end bg-[url('/profile_background.webp')] bg-cover h-72 w-310 bg-center">
+    <div className="flex ">
+      <div className="flex flex-col bg-gray-100 overflow-x-hidden overflow-y-auto">
+        <div className=" flex flex-col justify-end bg-[url('public/pexels-padrinan-19670.jpg')] bg-cover h-72 w-310 bg-center border-b border-gray-400">
           <div className="flex flex-col mb-[-100px] w-60 text-3xl">
             {/*profile img and name */}
             <img
@@ -33,15 +33,16 @@ function Profile() {
         </div>
         <div className=" h-120 w-80 mt-40 ml-2 text-3xl">
           <div className="flex w-screen">
-            <div className="flex flex-col gap-10 ml-10">
-              <h1 className="ml-14">Skills</h1>
+            <div className="flex flex-col gap-9 ml-10">
+              <h1 className="ml-10 -mb-5">Skills</h1>
+              <p className="border border-gray-400 -ml-12 -mr-30 "></p>
               <p>• {skill1}</p>
               <p>• {skill2}</p>
               <p>• {skill3}</p>
               <p>• {skill4}</p>
               <p>• {skill5}</p>
             </div>
-            <div className="flex flex-col gap-10 ml-30 border-l text-2xl -mt-40">
+            <div className="flex flex-col gap-10 ml-30 border-l border-gray-400 text-2xl -mt-40">
               <h1 className="ml-5 mt-16 text-gray-600">Username</h1>
               <p className="ml-5">{profile.Username}</p>
               <p className="border border-gray-400 w-239 -mt-6"></p>
@@ -67,7 +68,7 @@ function Profile() {
               <div className="ml-4 flex gap-15">
                 <a href="https://google.com">
                   <span>
-                    <button className="border-2 border-white  bg-black text-white w-30 h-15 rounded-4xl">
+                    <button className="border-2 border-white  bg-black text-white w-30 h-15 rounded-4xl cursor-pointer">
                       Dark
                     </button>
                   </span>
@@ -75,7 +76,7 @@ function Profile() {
                 <h1 className=" text-gray-700 mt-3">)-- Theme --(</h1>
                 <a href="https://google.com">
                   <span>
-                    <button className=" border-2 border-black bg-white text-black w-30 h-15 rounded-4xl">
+                    <button className=" border-2 border-black bg-white text-black w-30 h-15 rounded-4xl cursor-pointer">
                       light
                     </button>
                   </span>
@@ -89,7 +90,6 @@ function Profile() {
           </div>
         </div>
       </div>
-
       <div>
         <ProNav />
       </div>

@@ -89,12 +89,28 @@ export default function Profile() {
         </div>
       </div>
       {/* navbar */}
-      <div className="flex flex-col border-l-2 border-gray-500 h-screen w-72">
+      <div className="flex flex-col border-l-2 border-gray-500 h-screen w-72 bg-blue-300/40">
         <div className="flex h-20 text-3xl pt-5 border-b-2 border-gray-500">
           <img src="public/toggle.png" alt="toggle.img" className="h-15 w-15" />
           <span className="pt-3 pl-4">Navigation</span>
         </div>
-        <div></div>
+        <div className="flex flex-col items-end pr-5 space-y-15 text-3xl pt-15 text-gray-800">
+          <a href="">
+            <div className="cursor-pointer">Account</div>
+          </a>
+          <a href="">
+            <div className="cursor-pointer">Activity</div>
+          </a>
+          <a href="">
+            <div className="cursor-pointer">Contest</div>
+          </a>
+          <a href="">
+            <div className="cursor-pointer">Courses</div>
+          </a>
+          <a href="">
+            <div className="cursor-pointer">About</div>
+          </a>
+        </div>
       </div>
     </div>
   );

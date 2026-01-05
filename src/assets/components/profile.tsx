@@ -1,99 +1,46 @@
-import { useState } from "react";
-import ProNav from "./profilenav";
-function Profile() {
-  const [profile] = useState({
-    name: "Aditya pasari",
-    Username: "shiverlake",
-    Gender: "Male",
-    Address: "Narshingpur madhya pradesh",
-    Country: "India",
-    Email: "xyz@gmail.com",
-    Contact_number: 7879649689,
-    language: "hindi",
-  });
-  const [skill1] = useState("Python");
-  const [skill2] = useState("Java");
-  const [skill3] = useState("C++");
-  const [skill4] = useState("OS");
-  const [skill5] = useState("web");
-
+export default function Profile() {
   return (
-    <div className="flex ">
-      <div className="flex flex-col bg-gray-100 overflow-x-hidden overflow-y-auto">
-        <div className=" flex flex-col justify-end bg-[url('public/pexels-padrinan-19670.jpg')] bg-cover h-72 w-310 bg-center border-b border-gray-400">
-          <div className="flex flex-col mb-[-100px] w-60 text-3xl">
-            {/*profile img and name */}
-            <img
-              src="profile_img_2.webp"
-              alt="pfps.img"
-              className="h-30 w-30  ml-20 border-2 rounded-full"
-            />
-            <h1 className="ml-15">{profile.name}</h1>
-          </div>
+    <div className="flex h-screen w-screen bg-blue-300/35">
+      {/* profile content  */}
+      <div className="flex flex-col border-black w-full overflow-y-auto">
+        <div className="relative bg-[url('background_img_pro.jpg')] bg-cover h-70 w-full border-b-2 border-gray-500 shrink-0">
+          <img
+            src="profile_img_2.webp"
+            alt="pfps.img"
+            className="absolute h-30 w-30 top-55 left-15"
+          />
         </div>
-        <div className=" h-120 w-80 mt-40 ml-2 text-3xl">
-          <div className="flex w-screen">
-            <div className="flex flex-col gap-9 ml-10">
-              <h1 className="ml-10 -mb-5">Skills</h1>
-              <p className="border border-gray-400 -ml-12 -mr-30 "></p>
-              <p>• {skill1}</p>
-              <p>• {skill2}</p>
-              <p>• {skill3}</p>
-              <p>• {skill4}</p>
-              <p>• {skill5}</p>
-            </div>
-            <div className="flex flex-col gap-10 ml-30 border-l border-gray-400 text-2xl -mt-40">
-              <h1 className="ml-5 mt-16 text-gray-600">Username</h1>
-              <p className="ml-5">{profile.Username}</p>
-              <p className="border border-gray-400 w-239 -mt-6"></p>
-              <h1 className="ml-5  text-gray-600">Gender</h1>
-              <p className="ml-5">{profile.Gender}</p>
-              <p className="border border-gray-400 w-239 -mt-6"></p>
-              <h1 className="ml-5  text-gray-600">Address</h1>
-              <p className="ml-5">{profile.Address}</p>
-              <p className="border border-gray-400 w-239 -mt-6"></p>
-              <h1 className="ml-5  text-gray-600">Country</h1>
-              <p className="ml-5">{profile.Country}</p>
-              <p className="border border-gray-400 w-239 -mt-6"></p>
-              <h1 className="ml-5  text-gray-600">Email</h1>
-              <p className="ml-5">{profile.Email}</p>
-              <p className="border border-gray-400 w-239 -mt-6"></p>
-              <h1 className="ml-5  text-gray-600">Contact Number</h1>
-              <p className="ml-5">{profile.Contact_number}</p>
-              <p className="border border-gray-400 w-239 -mt-6"></p>
-              <h1 className="ml-5  text-gray-600">Language</h1>
-              <p className="ml-5">{profile.language}</p>
-              <p className="border border-gray-400 w-239 -mt-6"></p>
 
-              <div className="ml-4 flex gap-15">
-                <a href="https://google.com">
-                  <span>
-                    <button className="border-2 border-white  bg-black text-white w-30 h-15 rounded-4xl cursor-pointer">
-                      Dark
-                    </button>
-                  </span>
-                </a>
-                <h1 className=" text-gray-700 mt-3">)-- Theme --(</h1>
-                <a href="https://google.com">
-                  <span>
-                    <button className=" border-2 border-black bg-white text-black w-30 h-15 rounded-4xl cursor-pointer">
-                      light
-                    </button>
-                  </span>
-                </a>
-              </div>
-              <p className="border border-gray-400 w-239 -mt-6"></p>
-              <h1 className="ml-5  text-gray-600">Change Password</h1>
-              <p className="ml-5">button</p>
-              <p className="border border-gray-400 w-239 -mt-6"></p>
-            </div>
+        <div className="sticky flex w-full h-screen ">
+          <div className="relative flex flex-col items-center w-60 h-250 text-4xl pt-30 gap-10 font-extralight  font-serif border-r-2 border-gray-500 ">
+            <span className="italic font-bold">Skills</span>
+            <ul className="space-y-10">
+              <li>Java</li>
+              <li>C++</li>
+              <li>Python</li>
+              <li>React.js</li>
+              <li>Node.js</li>
+            </ul>
+          </div>
+          <div className="flex flex-col text-3xl gap-17 pt-5 pl-5 font-serif w-full">
+            <span>Username</span>
+            <span className="border-b border-gray-400 w-full">Shiver_Lake</span>
+            <span>xyz</span>
+            <span className="border-b border-gray-400 w-full">sdf</span>
+            <span>sdf</span>
+            <span className="border-b border-gray-400 w-full">sdf</span>
+            <span>sdf</span>
+            <span className="border-b border-gray-400 w-full">sfs</span>
+            <span>ssdfsfrw</span>
+            <span className="border-b border-gray-400 w-full">ssdfsfrw</span>
           </div>
         </div>
       </div>
-      <div>
-        <ProNav />
+      {/* navbar */}
+      <div className="flex flex-col border-l-2 border-gray-500 h-screen w-72">
+        <div></div>
+        <div></div>
       </div>
     </div>
   );
 }
-export default Profile;
